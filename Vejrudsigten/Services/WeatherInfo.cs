@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace Vejrudsigten.Services
+﻿namespace Vejrudsigten.Services
 {
     public class WeatherInfo
     {

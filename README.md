@@ -1,4 +1,4 @@
-# WeatherForecast
+# Vejrudsigten
 Test - Uge 7 - Skab vejrudsigts overskrifter
 
 ### Opgave

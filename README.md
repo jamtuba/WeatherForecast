@@ -27,4 +27,9 @@ Test - Uge 7 - Skab vejrudsigts overskrifter
 
 - [ ] Beslutningstabel:
 
+| First Header  | Second Header | Third Header |
+| ------------- | ------------- | --- |
+| Content Cell  | Content Cell  | Hello |
+| Content Cell  | Content Cell  | Again |
+
 

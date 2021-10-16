@@ -1,12 +1,12 @@
 # WeatherForecast
 Test - Uge 7 - Skab vejrudsigts overskrifter
 
-Testcase:
+- [ ] Testcase:
 
-Testdesign:
+- [ ] Testdesign:
 
-Ækvivalensklasser:
+- [ ] Ækvivalensklasser:
 
-Beslutningstabel:
+- [ ] Beslutningstabel:
 
 

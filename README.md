@@ -16,6 +16,7 @@ Test - Uge 7 - Skab vejrudsigts overskrifter
   For at kunne forudse hvilken påklædning man skal have på er det skønt at kunne frekventere en vejrudsigt. 
   I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
   Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
+  Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle overskrifter.
 ```
 
 - [ ] Testdesign:

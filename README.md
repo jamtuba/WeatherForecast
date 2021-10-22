@@ -1,5 +1,5 @@
 # Vejrudsigten
-Test - Uge 7 - Skab vejrudsigts overskrifter
+Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 ### Opgave
 

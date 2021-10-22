@@ -38,7 +38,7 @@ Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan
 
 - [ ] Beslutningstabel:
 Det antal test der skal til for at fuld klassedækning er 5 x 5 x 2 = 50 testcases.
-Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne.. Så den udelukker jeg også.
+Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så den udelukker jeg også.
 For at minimere antallet og sørge for at alle betingelser bliver berørt en gang i hver sektion kan vi nøjes med 5 testscenarier.
 
 | Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
@@ -59,13 +59,13 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt en gan
 | >= -10 < 0  | Skyet  | + | - |
 | >= -10 < 0  | Andet  | + | - |
 | >= -10 < 0  | Klart vejr  | - | - |
-| >= -10 < 0  | Regn  | - | + |
-| >= -10 < 0  | Sne  | - | - |
+| >= -10 < 0  | Regn  | - | - |
+| >= -10 < 0  | Sne  | - | + |
 | >= -10 < 0  | Skyet  | - | - |
 | >= -10 < 0  | Andet  | - | - |
 | >= 0 < 15  | Klart vejr  | + | - |
-| >= 0 < 15  | Regn  | + | - |
-| >= 0 < 15  | Sne  | + | + |
+| >= 0 < 15  | Regn  | + | + |
+| >= 0 < 15  | Sne  | + | - |
 | >= 0 < 15  | Skyet  | + | - |
 | >= 0 < 15  | Andet  | + | - |
 | >= 0 < 15  | Klart vejr  | - | - |

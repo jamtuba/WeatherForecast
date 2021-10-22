@@ -26,7 +26,7 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 - [ ] Grænseværdier:
 
-
+|[This is an image](/assets/images/Vejrudsigten.jpg)
 
 
 - [ ] Beslutningstabel:

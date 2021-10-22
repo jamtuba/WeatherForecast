@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31808.319
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vejrudsigten", "Vejrudsigten\Vejrudsigten.csproj", "{D9A9C618-E9BA-4D91-8C95-F7288882DE91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vejrudsigten.Test", "Vejrudsigten.Test\Vejrudsigten.Test.csproj", "{B4198793-7822-403A-B44D-1FBF801E90CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vejrudsigten.Test", "Vejrudsigten.Test\Vejrudsigten.Test.csproj", "{B4198793-7822-403A-B44D-1FBF801E90CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

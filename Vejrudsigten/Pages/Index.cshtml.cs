@@ -21,16 +21,21 @@ namespace Vejrudsigten.Pages
         {
             var key = _configuration["key"];
 
-            if (key == null)
+            var city = "Rom";
+
+            if (string.IsNullOrEmpty(key))
             {
                 ViewData.Add("Vejrudsigten", "Hov! Du har glemt at angive nøglen i appsettings.local.json. Gå tilbage til opgavebeskrivelsen og se hvordan");
-            } else
-            {
-                ViewData.Add("Vejrudsigten", await WeatherForecast.GetForecastAsync(key));
             }
-
-            
-
+            else if (string.IsNullOrEmpty(city))
+            {
+                ViewData.Add("By", "Du skal angive en by i Index.cshtml.cs!");
+            }
+            else
+            {
+                ViewData.Add("Vejrudsigten", await WeatherForecast.GetForecastAsync(key, city));
+                ViewData.Add("By", city);
+            }
         }
     }
 }

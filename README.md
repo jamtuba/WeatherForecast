@@ -29,7 +29,7 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 ### Ækvivalensklasser:
   
-![Vejrudsigt](https://user-images.githubusercontent.com/38835602/138444521-6ab5b903-8dc8-489e-abb0-db0eb96d3637.jpg)
+![Vejrudsigt](https://user-images.githubusercontent.com/38835602/138444769-dc8b47db-50bc-47c0-ae42-a7a926676aa4.jpg)
 
 Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
 

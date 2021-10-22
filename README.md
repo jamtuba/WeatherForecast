@@ -1,3 +1,4 @@
+[![.NET](https://github.com/jamtuba/WeatherForecast/actions/workflows/weatherFlow.yml/badge.svg)](https://github.com/jamtuba/WeatherForecast/actions/workflows/weatherFlow.yml)
 # Vejrudsigten
 Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 

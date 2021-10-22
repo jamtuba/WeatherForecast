@@ -7,7 +7,7 @@ namespace Vejrudsigten.Test
     public class WeatherTest
     {
         [Theory]
-         [InlineData("Klart vejr", "Masser af sol og blå himmel")]
+         [InlineData("Klart vejr", "Masser af sol og blaa himmel")]
         public void Test_GetTheWeatherType_Appends_To_Stringbuilder(string todayWeatherType, string expectedString)
         {
             // Arrange
@@ -23,7 +23,7 @@ namespace Vejrudsigten.Test
 
         [Theory]
         [InlineData("Klart vejr")]
-        [InlineData("Dårligt vejr")]
+        [InlineData("Daarligt vejr")]
         public void Test_GetTheWeatherType_Throws_No_Exception(string todayWeatherType)
         {
             // Arrange
@@ -38,7 +38,7 @@ namespace Vejrudsigten.Test
         }
 
         [Theory]
-        [InlineData(-10, " og du skal have ski eller skøjter med!")]
+        [InlineData(-10, " og du skal have ski eller skoejter med!")]
         public void Test_GetTheTemperature_Appends_To_Stringbuilder(double todaydayTemperature, string expectedString)
         {
             // Arrange

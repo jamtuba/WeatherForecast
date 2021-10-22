@@ -8,19 +8,19 @@ namespace Vejrudsigten.Services
     {
         readonly List<string> WeatherTypesFromDescription = new()
         {
-            "Masser af sol og blå himmel",
+            "Masser af sol og blaa himmel",
             "Regn, regn og atter regn",
             "Masser af sne",
-            "Gråt og kedeligt",
+            "Graat og kedeligt",
             "Kedeligt og omskifteligt vejr"
         };
         readonly List<string> WeatherTypesFromDegrees = new()
         {
             " og det er meget koldt. Bliv hjemme!",
-            " og du skal have ski eller skøjter med!",
+            " og du skal have ski eller skoejter med!",
             ", men stadig ikke super varmt.",
             ", husk solcremen.",
-            " og så varmt at du skal blive i skyggen."
+            " og saa varmt at du skal blive i skyggen."
         };
 
         public string GetSpecialWeatherForecast(WeatherInfo yesterday, WeatherInfo today)

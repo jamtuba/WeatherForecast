@@ -1,3 +1,4 @@
+[![.NET](https://github.com/jamtuba/WeatherForecast/actions/workflows/weatherFlow.yml/badge.svg)](https://github.com/jamtuba/WeatherForecast/actions/workflows/weatherFlow.yml)
 # Vejrudsigten
 Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
@@ -24,15 +25,68 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
   Lave tests der tester de metoder jeg vil ændre i.
 ```
 
-- [ ] Grænseværdier:
+- [ ] Grænseværdianalyse:
+  Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
+  Jeg er nået frem til 5 ækvivalensklasser.
 
+### Ækvivalensklasser:
+  
+![Vejrudsigt](https://user-images.githubusercontent.com/38835602/138444769-dc8b47db-50bc-47c0-ae42-a7a926676aa4.jpg)
+
+Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
 
 
 - [ ] Beslutningstabel:
 
-| First Header  | Second Header | Third Header |
-| ------------- | ------------- | --- |
-| Content Cell  | Content Cell  | Hello |
-| Content Cell  | Content Cell  | Again |
-
-
+| Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
+| ------------- | ------------- | :---: | :---:|
+| < -10  | Klart vejr  | + | + |
+| < -10  | Regn | + | - |
+| < -10  | Sne  | + | - |
+| < -10  | Skyet  | + | - |
+| < -10  | Andet  | + | - |
+| < -10  | Klart vejr  | - | - |
+| < -10  | Regn | - | - |
+| < -10  | Sne  | - | - |
+| < -10  | Skyet  | - | - |
+| < -10  | Andet  | - | - |
+| >= -10 < 0  | Klart vejr  | + | - |
+| >= -10 < 0  | Regn  | + | - |
+| >= -10 < 0  | Sne  | + | + |
+| >= -10 < 0  | Skyet  | + | - |
+| >= -10 < 0  | Andet  | + | - |
+| >= -10 < 0  | Klart vejr  | - | - |
+| >= -10 < 0  | Regn  | - | - |
+| >= -10 < 0  | Sne  | - | - |
+| >= -10 < 0  | Skyet  | - | + |
+| >= -10 < 0  | Andet  | - | - |
+| >= 0 < 15  | Klart vejr  | + | - |
+| >= 0 < 15  | Regn  | + | - |
+| >= 0 < 15  | Sne  | + | - |
+| >= 0 < 15  | Skyet  | + | - |
+| >= 0 < 15  | Andet  | + | + |
+| >= 0 < 15  | Klart vejr  | - | + |
+| >= 0 < 15  | Regn  | - | - |
+| >= 0 < 15  | Sne  | - | - |
+| >= 0 < 15  | Skyet  | - | - |
+| >= 0 < 15  | Andet  | - | - |
+| >= 15 < 30  | Klart vejr  | + | - |
+| >= 15 < 30  | Regn  | + | + |
+| >= 15 < 30  | Sne  | + | - |
+| >= 15 < 30  | Skyet  | + | - |
+| >= 15 < 30  | Andet  | + | - |
+| >= 15 < 30  | Klart vejr  | - | - |
+| >= 15 < 30  | Regn  | - | - |
+| >= 15 < 30  | Sne  | - | + |
+| >= 15 < 30  | Skyet  | - | - |
+| >= 15 < 30  | Andet  | - | - |
+| >= 30 < 100  | Klart vejr  | + | - |
+| >= 30 < 100  | Regn  | + | - |
+| >= 30 < 100  | Sne  | + | - |
+| >= 30 < 100  | Skyet  | + | + |
+| >= 30 < 100  | Andet  | + | - |
+| >= 30 < 100  | Klart vejr  | - | - |
+| >= 30 < 100  | Regn  | - | - |
+| >= 30 < 100  | Sne  | - | - |
+| >= 30 < 100  | Skyet  | - | - |
+| >= 30 < 100  | Andet  | - | + |

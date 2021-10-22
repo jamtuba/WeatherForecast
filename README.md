@@ -82,8 +82,8 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt én ga
 | >= 15 < 30  | Andet  | + | - |
 | >= 15 < 30  | Klart vejr  | - | - |
 | >= 15 < 30  | Regn  | - | - |
-| >= 15 < 30  | Sne  | - | + |
-| >= 15 < 30  | Skyet  | - | - |
+| >= 15 < 30  | Sne  | - | - |
+| >= 15 < 30  | Skyet  | - | + |
 | >= 15 < 30  | Andet  | - | - |
 | >= 30 < 100  | Klart vejr  | + | - |
 | >= 30 < 100  | Regn  | + | - |

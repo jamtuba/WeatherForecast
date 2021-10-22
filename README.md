@@ -38,7 +38,7 @@ Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan
 - [ ] Beslutningstabel:
 
 | Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
-| ------------- | ------------- | --- | ---|
+| ------------- | ------------- | :---: | :---:|
 | < -10  | Klart vejr  | + | + |
 | < -10  | Regn | + | + |
 | < -10  | Sne  | + | + |

@@ -48,7 +48,23 @@ Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan
 | >= -10 < 0  | Regn  | + |
 | >= -10 < 0  | Sne  | + |
 | >= -10 < 0  | Skyet  | + |
+| >= -10 < 0  | Andet  | + |
+| >= 0 < 15  | Klart vejr  | + |
+| >= 0 < 15  | Regn  | + |
+| >= 0 < 15  | Sne  | + |
+| >= 0 < 15  | Skyet  | + |
 | >= 0 < 15  | Andet  | + |
+| >= 15 < 30  | Klart vejr  | + |
+| >= 15 < 30  | Regn  | + |
+| >= 15 < 30  | Sne  | + |
+| >= 15 < 30  | Skyet  | + |
+| >= 15 < 30  | Andet  | + |
+| >= 30 < 100  | Klart vejr  | + |
+| >= 30 < 100  | Regn  | + |
+| >= 30 < 100  | Sne  | + |
+| >= 30 < 100  | Skyet  | + |
+| >= 30 < 100  | Andet  | + |
+
 | Content Cell  | Content Cell  | Again |
 
  Klart vejr

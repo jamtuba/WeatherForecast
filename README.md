@@ -26,6 +26,7 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 - [ ] Grænseværdianalyse:
   Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
+  Jeg er nået frem til 5 ækvivalensklasser.
 
 ### Ækvivalensklasser:
   
@@ -34,13 +35,25 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
 
 
-
-
 - [ ] Beslutningstabel:
 
-| First Header  | Second Header | Third Header |
+| Temperatur  | Vejrtype | Vejrændring siden i går? | 
 | ------------- | ------------- | --- |
-| Content Cell  | Content Cell  | Hello |
+| < -10  | Klart vejr  | + |
+| < -10  | Regn | + |
+| < -10  | Sne  | + |
+| < -10  | Skyet  | + |
+| < -10  | Andet  | + |
+| >= -10 < 0  | Klart vejr  | + |
+| >= -10 < 0  | Regn  | + |
+| >= -10 < 0  | Sne  | + |
+| >= -10 < 0  | Skyet  | + |
+| >= 0 < 15  | Andet  | + |
 | Content Cell  | Content Cell  | Again |
 
+ Klart vejr
+        /// Regn
+        /// Sne
+        /// Skyet
+        /// Andet
 

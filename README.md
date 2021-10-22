@@ -24,7 +24,15 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
   Lave tests der tester de metoder jeg vil ændre i.
 ```
 
-- [ ] Grænseværdier:
+- [ ] Grænseværdianalyse:
+  Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
+
+### Ækvivalensklasser:
+  
+![Vejrudsigt](https://user-images.githubusercontent.com/38835602/138444521-6ab5b903-8dc8-489e-abb0-db0eb96d3637.jpg)
+
+Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
+
 
 
 

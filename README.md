@@ -13,12 +13,12 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 - [ ] Testcase:
 ```
   Her skal være en beskrivelse af hvordan programmet opfører sig alá de tidligere opgaver, Museum, DSB mm.
-  
-  For at kunne forudse hvilken påklædning man skal have på er det skønt at kunne frekventere en vejrudsigt. 
-  I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
-  Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
-  Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle overskrifter.
 ```
+For at kunne forudse hvilken påklædning man skal have på er det skønt at kunne frekventere en vejrudsigt. 
+I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
+Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
+Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter.
+
 
 - [ ] Testdesign:
 ```
@@ -26,8 +26,9 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 ```
 
 - [ ] Grænseværdianalyse:
-  Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
-  Jeg er nået frem til 5 ækvivalensklasser.
+
+Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
+Jeg er nået frem til 5 ækvivalensklasser.
 
 ### Ækvivalensklasser:
   
@@ -37,9 +38,10 @@ Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan
 
 
 - [ ] Beslutningstabel:
+
 Det antal test der skal til for at fuld klassedækning er 5 x 5 x 2 = 50 testcases.
-Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så den udelukker jeg også.
-For at minimere antallet og sørge for at alle betingelser bliver berørt en gang i hver sektion kan vi nøjes med 5 testscenarier.
+Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så dem udelukker jeg også.
+For at minimere antallet og sørge for at alle betingelser bliver berørt én gang i hver sektion kan vi nøjes med 5 testscenarier.
 
 | Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
 | ------------- | ------------- | :---: | :---:|

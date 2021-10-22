@@ -1,5 +1,5 @@
 # Vejrudsigten
-Test - Uge 7 - Skab vejrudsigts overskrifter
+Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 ### Opgave
 
@@ -25,6 +25,9 @@ Test - Uge 7 - Skab vejrudsigts overskrifter
 ```
 
 - [ ] Grænseværdier:
+
+
+![Vejrudsigt](https://user-images.githubusercontent.com/38835602/138441567-99031d50-eba8-4cff-89ee-7d4b7a597432.jpg)
 
 - [ ] Beslutningstabel:
 

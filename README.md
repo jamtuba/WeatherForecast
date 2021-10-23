@@ -101,6 +101,6 @@ Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, men mer
 
 Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for mange tests. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det mener jeg er uden for opgaven rammer. 
 
-###### *Fremstillet af*
+###### **Fremstillet af**
 
-###### *Janus Mogensen*
+###### **Janus Mogensen**

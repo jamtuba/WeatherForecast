@@ -37,9 +37,9 @@ Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan
 
 ### Beslutningstabel:
 
-Det antal test der skal til for at fuld klassedækning er 5 x 5 x 2 = 50 testcases.
+Det antal test der skal til for at få fuld klassedækning er 5 x 5 x 2 = 50 testcases.
 Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så dem udelukker jeg også.
-For at minimere antallet og sørge for at alle betingelser bliver berørt én gang i hver sektion kan vi nøjes med 5 testscenarier.
+Ved at bruge 5 testscenarier kan vi få berørt alle betingelser mindst én gang.
 
 | Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
 | ------------- | ------------- | :---: | :---:|
@@ -94,12 +94,12 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt én ga
 | >= 30 < 100  | Skyet  | - | - |
 | >= 30 < 100  | Andet  | - | - |
 
-For at dække mere kode har jeg desuden lavet tests der tjekker for null og "", samt invalidt input f.eks. "Sol". 
+For at dække mere kode har jeg desuden lavet tests der tjekker for null og "", samt invalidt input f.eks. "Sol". Jeg tjekker også om mine metoder kaster nogen exceptions.
 Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, men mere 'nice to have'.
 
 ## Konklusion:
 
-Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for mange tests. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det mener jeg er uden for opgavens rammer. 
+Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for meget. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det mener jeg er uden for opgavens rammer. 
 
 #### **Fremstillet af**
 

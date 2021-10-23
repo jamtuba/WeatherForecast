@@ -10,22 +10,21 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 3. Din kode til løsning af opgaven samt unit-test som tester din løsning baseret på dit testdesign.
 
-- [ ] Testcase:
-```
-  Her skal være en beskrivelse af hvordan programmet opfører sig alá de tidligere opgaver, Museum, DSB mm.
-```
-For at kunne forudse hvilken påklædning man skal have på er det skønt at kunne frekventere en vejrudsigt. 
+## Testcase:
+
+For at kunne forudse hvilken påklædning man skal have på er det praktisk at kunne frekventere en vejrudsigt. 
 I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
-Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
-Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter.
+Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur i et objekt.
+Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter. 
+Hvis vejret skifter vil dette indgå i overskriften. Temperaturen giver første del af overskriften, som sættes sammen med anden del der er genereret ud fra vejrtypen.
 
+## Testdesign:
 
-- [ ] Testdesign:
-```
-  Lave tests der tester de metoder jeg vil ændre i.
-```
+Jeg har tilføjet en WeatherComposer klasse med nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa. Den bliver brugt i WeatherForecast klassen til at generere den dynamiske overskrift.
 
-- [ ] Grænseværdianalyse:
+Jeg har ikke testet nogen af de eksisterende metoder.
+
+### Grænseværdianalyse:
 
 Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
 Jeg er nået frem til 5 ækvivalensklasser.
@@ -36,12 +35,11 @@ Jeg er nået frem til 5 ækvivalensklasser.
 
 Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
 
+### Beslutningstabel:
 
-- [ ] Beslutningstabel:
-
-Det antal test der skal til for at fuld klassedækning er 5 x 5 x 2 = 50 testcases.
+Det antal test der skal til for at få fuld klassedækning er 5 x 5 x 2 = 50 testcases.
 Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så dem udelukker jeg også.
-For at minimere antallet og sørge for at alle betingelser bliver berørt én gang i hver sektion kan vi nøjes med 5 testscenarier.
+Ved at bruge 5 testscenarier kan vi få berørt alle betingelser mindst én gang.
 
 | Temperatur i grader celsius  | Vejrtype | Vejrændring siden i går? | Skal testes! |
 | ------------- | ------------- | :---: | :---:|
@@ -95,3 +93,14 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt én ga
 | >= 30 < 100  | Sne  | - | - |
 | >= 30 < 100  | Skyet  | - | - |
 | >= 30 < 100  | Andet  | - | - |
+
+For at dække mere kode har jeg desuden lavet tests der tjekker for null og "", samt invalidt input f.eks. "Sol". Jeg tjekker også om mine metoder kaster nogen exceptions.
+Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, men mere 'nice to have'.
+
+## Konklusion:
+
+Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for meget. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det mener jeg er uden for opgavens rammer. 
+
+#### **Fremstillet af**
+
+#### **Janus Mogensen**

@@ -10,22 +10,21 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 3. Din kode til løsning af opgaven samt unit-test som tester din løsning baseret på dit testdesign.
 
-- [ ] Testcase:
-```
-  Her skal være en beskrivelse af hvordan programmet opfører sig alá de tidligere opgaver, Museum, DSB mm.
-```
-For at kunne forudse hvilken påklædning man skal have på er det skønt at kunne frekventere en vejrudsigt. 
+## Testcase:
+
+For at kunne forudse hvilken påklædning man skal have på er det praktisk at kunne frekventere en vejrudsigt. 
 I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
 Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
-Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter.
+Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter. 
+Overskriften vil indeholde info om vejret skifter, samt hvordan det bliver i dag i Århus.
 
+## Testdesign:
 
-- [ ] Testdesign:
-```
-  Lave tests der tester de metoder jeg vil ændre i.
-```
+For at få koden til at virke har jeg tilføjet nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa.
 
-- [ ] Grænseværdianalyse:
+Jeg har ikke testet nogen af de eksisterende metoder.
+
+### Grænseværdianalyse:
 
 Da der er mange forskellige temperaturer at tage udgangspunkt i er det de følgende jeg har brugt.
 Jeg er nået frem til 5 ækvivalensklasser.
@@ -36,8 +35,7 @@ Jeg er nået frem til 5 ækvivalensklasser.
 
 Under det absolutte nulpunkt er en ugyldig klasse og over 100 grader celsius kan heller ikke anses relevant i denne sammenhæng.
 
-
-- [ ] Beslutningstabel:
+### Beslutningstabel:
 
 Det antal test der skal til for at fuld klassedækning er 5 x 5 x 2 = 50 testcases.
 Dernæst er der et par scenarier der er temmelig usansynlige f. eks 30 grader og sne eller under -10 grader og regn. Så dem udelukker jeg også.
@@ -95,3 +93,6 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt én ga
 | >= 30 < 100  | Sne  | - | - |
 | >= 30 < 100  | Skyet  | - | - |
 | >= 30 < 100  | Andet  | - | - |
+
+For at dække mere kode har jeg desuden lavet tests der tjekker for null og "", samt invalidt input f.eks. "Sol". 
+Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, mere 'nice to have'.

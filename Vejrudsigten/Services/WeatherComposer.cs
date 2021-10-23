@@ -8,11 +8,11 @@ namespace Vejrudsigten.Services
     {
         readonly List<string> WeatherTypesFromDescription = new()
         {
-            "Masser af sol og blaa himmel",
+            "Sol og blaa himmel",
             "Regn, regn og atter regn",
-            "Masser af sne",
+            "Sne saa langt oejet raekker",
             "Graat og kedeligt",
-            "Kedeligt og omskifteligt vejr"
+            "Omskifteligt vejr"
         };
         readonly List<string> WeatherTypesFromDegrees = new()
         {

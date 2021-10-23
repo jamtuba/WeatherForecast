@@ -12,7 +12,7 @@ namespace Vejrudsigten.Services
             "Regn, regn og atter regn",
             "Sne saa langt oejet raekker",
             "Graat og kedeligt",
-            "Omskifteligt vejr"
+            "Ustadigt vejr"
         };
         readonly List<string> WeatherTypesFromDegrees = new()
         {

@@ -11,7 +11,7 @@ namespace Vejrudsigten.Test
         [InlineData("Sne", -10.00, "Sne", -10.00, "Sne saa langt oejet raekker og du skal have ski eller skoejter med!")]
         [InlineData("Klart vejr", 0.00, "Regn", 0.01, "Vejret skifter! Regn, regn og atter regn, men stadig ikke super varmt.")]
         [InlineData("Skyet", 15.00, "Skyet", 15.00, "Graat og kedeligt, husk solcremen.")]
-        [InlineData("Klart vejr", 30.00, "Andet", 30.00, "Vejret skifter! Omskifteligt vejr og saa varmt at du skal blive i skyggen.")]
+        [InlineData("Klart vejr", 30.00, "Andet", 30.00, "Vejret skifter! Ustadigt vejr og saa varmt at du skal blive i skyggen.")]
         public void Test_GetSpecialWeatherForecast_Returns_Correct_String(string yesterdayWeatherType, double yesterdayTemperature, string todayWeatherType, double todayTemperature, string expectedString)
         {
             // Arrange
@@ -84,6 +84,7 @@ namespace Vejrudsigten.Test
 
         [Theory]
         [InlineData(-10, " og du skal have ski eller skoejter med!")]
+        [InlineData(0, ", men stadig ikke super varmt.")]
         public void Test_GetTheTemperature_Appends_To_Stringbuilder(double todaydayTemperature, string expectedString)
         {
             // Arrange

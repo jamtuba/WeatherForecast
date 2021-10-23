@@ -14,9 +14,6 @@ namespace Vejrudsigten.Services
             var weatherComposer = new WeatherComposer();
 
             return weatherComposer.GetSpecialWeatherForecast(todayInfo, yesterdayInfo);
-
-            //String result = "Vejret i Århus er {0} og der er {1} grader. I går var det {2} og {3} grader";
-            //return String.Format(result, todayInfo.Conditions, todayInfo.Temperature, yesterdayInfo.Conditions, yesterdayInfo.Temperature);
         }
     }
 }

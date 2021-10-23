@@ -21,7 +21,7 @@ namespace Vejrudsigten.Pages
         {
             var key = _configuration["key"];
 
-            var city = "Aarhus";
+            var city = "Kolding";
 
             if (string.IsNullOrEmpty(key))
             {

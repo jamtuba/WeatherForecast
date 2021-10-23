@@ -16,11 +16,11 @@ For at kunne forudse hvilken påklædning man skal have på er det praktisk at k
 I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
 Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
 Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter. 
-Overskriften vil indeholde info om vejret skifter, samt hvordan det bliver i dag i Århus.
+Hvis vejret skifter vil dette indgå i overskriften. Temperaturen giver første del af overskriften, som sættes sammen med anden del der er genereret ud fra vejrtypen.
 
 ## Testdesign:
 
-For at få koden til at virke har jeg tilføjet nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa.
+For at få koden til at virke har jeg tilføjet en WeatherComposer klasse med nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa. 
 
 Jeg har ikke testet nogen af de eksisterende metoder.
 
@@ -95,4 +95,8 @@ For at minimere antallet og sørge for at alle betingelser bliver berørt én ga
 | >= 30 < 100  | Andet  | - | - |
 
 For at dække mere kode har jeg desuden lavet tests der tjekker for null og "", samt invalidt input f.eks. "Sol". 
-Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, mere 'nice to have'.
+Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, men mere 'nice to have'.
+
+## Konklusion:
+
+Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for mange tests. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det er uden for opgaven rammer. 

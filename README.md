@@ -14,13 +14,13 @@ Test - Uge 7 - Skab overskrifter ud fra vejrudsigten
 
 For at kunne forudse hvilken påklædning man skal have på er det praktisk at kunne frekventere en vejrudsigt. 
 I vejrudsigten har man mulighed for at få et hint om hvordan vejret er ved at udvikle sig fra igår til idag og videre frem.
-Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur.
+Vejrudsigten bliver fundet ved hjælp af vejrdata fra et vejr-API som sender en temperatur og en vejrtype retur i et objekt.
 Ved at teste temperaturen og vejrtypen mod mine grænseværdier kommer programmet frem til nogle dynamiske overskrifter. 
 Hvis vejret skifter vil dette indgå i overskriften. Temperaturen giver første del af overskriften, som sættes sammen med anden del der er genereret ud fra vejrtypen.
 
 ## Testdesign:
 
-For at få koden til at virke har jeg tilføjet en WeatherComposer klasse med nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa. 
+Jeg har tilføjet en WeatherComposer klasse med nogle metoder der opdeler API´ets informationer og beslutter hvad overskriften skal stykkes sammen af. Jeg har opdelt dette i flere metoder for nemmere at kunne teste det. For at kunne køre automatiserede tests med Github Actions er de danske æ, ø og å skiftet ud med ae, oe og aa. 
 
 Jeg har ikke testet nogen af de eksisterende metoder.
 
@@ -99,4 +99,8 @@ Er lidt i tvivl om de egentlig er nødvendige ud fra de givne kriterier, men mer
 
 ## Konklusion:
 
-Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for mange tests. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det er uden for opgaven rammer. 
+Man kan jo blive ved med at finde vinkler at teste på, så målet for mig var at teste nøjagtigt det der er blevet bedt om og ikke lave for mange tests. Jeg har ikke lavet tests på WeatherForecast klassen, da jeg ville skulle mocke servicen der henter info fra API´et og det mener jeg er uden for opgaven rammer. 
+
+###### *Fremstillet af*
+
+###### *Janus Mogensen*
